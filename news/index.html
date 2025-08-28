@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">jstable</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">1.3.16</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">1.3.17</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +44,18 @@
       <small>Source: <a href="https://github.com/jinseob2kim/jstable/blob/master/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="1.3.17" id="jstable-1317">jstable 1.3.17<a class="anchor" aria-label="anchor" href="#jstable-1317"></a></h2>
+<ul><li>Fix: <code>cox2.display</code> now properly handles variables with no variation in complete cases during univariate analysis</li>
+<li>Fix: <code>cox2.display</code> correctly filters out NA p-values when using <code>pcut.univariate</code> option</li>
+<li>Fix: <code>cox2.display</code> now properly handles data.table objects with <code>data_for_univariate</code> parameter</li>
+<li>Fix: When <code>pcut.univariate</code> is applied, <code>cox2.display</code> now correctly shows metrics (N, AIC, C-index, Events) from the selected model with significant variables</li>
+<li>Fix: Added missing <code>@importFrom survival Surv</code> for proper NAMESPACE generation</li>
+<li>Fix: <code>glmshow.display</code> now properly handles interaction terms with <code>pcut.univariate</code> option</li>
+<li>Fix: <code>glmshow.display</code> correctly maintains variable order when selecting significant variables with interaction terms</li>
+<li>Fix: <code>glmshow.display</code> now displays proper reference levels for interaction terms with multi-level factors (e.g., “wt:cyl: ref.=4”)</li>
+<li>Update: <code>LabeljsTable</code> now supports interaction terms, applying labels to both main effects and interaction coefficients</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="1.3.16" id="jstable-1316">jstable 1.3.16<a class="anchor" aria-label="anchor" href="#jstable-1316"></a></h2><p class="text-muted">CRAN release: 2025-08-20</p>
 <ul><li>Update: Now in <code>CreateTableOneJS</code> and <code>svyCreateTableOneJS</code>, column names are more descriptive when using <code>psub = T</code> with <code>strata</code>, <code>strata2</code>.</li>
