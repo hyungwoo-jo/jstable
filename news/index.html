@@ -49,6 +49,7 @@
 <ul><li>Fix: <code>cox2.display</code> now properly handles variables with no variation in complete cases during univariate analysis</li>
 <li>Fix: <code>cox2.display</code> correctly filters out NA p-values when using <code>pcut.univariate</code> option</li>
 <li>Fix: <code>cox2.display</code> now properly handles data.table objects with <code>data_for_univariate</code> parameter</li>
+<li>Fix: <code>cox2.display</code> shows adjusted HR properly and also handles clustered coxph model properly.</li>
 <li>Fix: When <code>pcut.univariate</code> is applied, <code>cox2.display</code> now correctly shows metrics (N, AIC, C-index, Events) from the selected model with significant variables</li>
 <li>Fix: Added missing <code>@importFrom survival Surv</code> for proper NAMESPACE generation</li>
 <li>Fix: <code>glmshow.display</code> now properly handles interaction terms with <code>pcut.univariate</code> option</li>
