@@ -268,9 +268,9 @@ options<a class="anchor" aria-label="anchor" href="#cox-model-with-frailty-or-cl
 <span><span class="va">fit2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/survival/man/coxph.html" class="external-link">coxph</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/survival/man/Surv.html" class="external-link">Surv</a></span><span class="op">(</span><span class="va">time</span>, <span class="va">status</span><span class="op">)</span> <span class="op">~</span> <span class="va">ph.ecog</span> <span class="op">+</span> <span class="va">age</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/pkg/survival/man/frailty.html" class="external-link">frailty</a></span><span class="op">(</span><span class="va">inst</span><span class="op">)</span>, <span class="va">lung</span>, model <span class="op">=</span> <span class="cn">T</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/cox2.display.html">cox2.display</a></span><span class="op">(</span><span class="va">fit1</span><span class="op">)</span></span>
 <span><span class="co">#&gt; $table</span></span>
-<span><span class="co">#&gt;         crude HR(95%CI)    crude P value adj. HR(95%CI)      adj. P value</span></span>
-<span><span class="co">#&gt; ph.ecog "1.61 (1.25,2.08)" "&lt; 0.001"     "1.56 (0.07,33.26)" "&lt; 0.001"   </span></span>
-<span><span class="co">#&gt; age     "1.02 (1.01,1.03)" "0.007"       "1.01 (0.14,7.34)"  "0.085"     </span></span>
+<span><span class="co">#&gt;         crude HR(95%CI)    crude P value adj. HR(95%CI)  adj. P value</span></span>
+<span><span class="co">#&gt; ph.ecog "1.61 (1.25,2.08)" "&lt; 0.001"     "1.56 (1.22,2)" "&lt; 0.001"   </span></span>
+<span><span class="co">#&gt; age     "1.02 (1.01,1.03)" "0.007"       "1.01 (1,1.02)" "0.085"     </span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $ranef</span></span>
 <span><span class="co">#&gt;         [,1] [,2] [,3] [,4]</span></span>

@@ -102,9 +102,9 @@
 <span class="r-in"><span><span class="va">fit2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/survival/man/coxph.html" class="external-link">coxph</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/survival/man/Surv.html" class="external-link">Surv</a></span><span class="op">(</span><span class="va">time</span>, <span class="va">status</span><span class="op">)</span> <span class="op">~</span> <span class="va">ph.ecog</span> <span class="op">+</span> <span class="va">age</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/pkg/survival/man/frailty.html" class="external-link">frailty</a></span><span class="op">(</span><span class="va">inst</span><span class="op">)</span>, data <span class="op">=</span> <span class="va">lung</span>, model <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">cox2.display</span><span class="op">(</span><span class="va">fit1</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $table</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         crude HR(95%CI)    crude P value adj. HR(95%CI)      adj. P value</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> ph.ecog "1.61 (1.25,2.08)" "&lt; 0.001"     "1.56 (0.07,33.26)" "&lt; 0.001"   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> age     "1.02 (1.01,1.03)" "0.007"       "1.01 (0.14,7.34)"  "0.085"     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         crude HR(95%CI)    crude P value adj. HR(95%CI)  adj. P value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ph.ecog "1.61 (1.25,2.08)" "&lt; 0.001"     "1.56 (1.22,2)" "&lt; 0.001"   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> age     "1.02 (1.01,1.03)" "0.007"       "1.01 (1,1.02)" "0.085"     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $ranef</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>         [,1] [,2] [,3] [,4]</span>
