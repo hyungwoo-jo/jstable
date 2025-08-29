@@ -55,6 +55,8 @@
 <li>Fix: <code>glmshow.display</code> now properly handles interaction terms with <code>pcut.univariate</code> option</li>
 <li>Fix: <code>glmshow.display</code> correctly maintains variable order when selecting significant variables with interaction terms</li>
 <li>Fix: <code>glmshow.display</code> now displays proper reference levels for interaction terms with multi-level factors (e.g., “wt:cyl: ref.=4”)</li>
+<li>Fix: <code>geeglm.display</code> now correctly uses <code>data_for_univariate</code> with <code>pcut.univariate</code> to refit model with selected variables only, updating N accordingly</li>
+<li>Fix: <code>lmer.display</code> now correctly uses <code>data_for_univariate</code> with <code>pcut.univariate</code> to refit model with selected variables only, updating N and other metrics accordingly</li>
 <li>Update: <code>LabeljsTable</code> now supports interaction terms, applying labels to both main effects and interaction coefficients</li>
 </ul></div>
     <div class="section level2">
